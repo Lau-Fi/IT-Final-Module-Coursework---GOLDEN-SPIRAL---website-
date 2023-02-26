@@ -2,26 +2,26 @@
 <div class="title">
   <nav class="navbar navbar-expand-lg navbar-light text-black bg-#2470FB;">
     <div class="container-fluid">
-        <a href ='idk.html'><img src = 'logo.png' height = '125px'></a>
-      <a class="navbar-brand" href="#" cursorshover="true">-Golden Spiral</a>
+        <a href ='Home.html'><img src = 'logo.png' height = '125px'></a>
+      <a class="navbar-brand" href="Home.html" cursorshover="true">-Golden Spiral</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#" cursorshover="true">Home
+            <a class="nav-link active" href="Home.html" cursorshover="true">Home
               <span class="visually-hidden">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'play' %}" cursorshover="true">Map and Options</a>
+            <a class="nav-link" href="Map.html" cursorshover="true">Map and Options</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'chat' %}" cursorshover="true">Rides List</a>
+            <a class="nav-link" href="Rides.html" cursorshover="true">Rides List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}" cursorshover="true">Job Applications</a>
+            <a class="nav-link" href="Jobs.html" cursorshover="true">Job Applications</a>
           </li>
         </ul>
       </div>
@@ -60,7 +60,7 @@ section h2 {
   top: 5%;
   transform: translate(-50%, -50%);
   background-color: transparent;
-  color: #2470FB;
+  color: #2f3438;
   width: 1000px;
   height: 50px;
 }
@@ -118,11 +118,17 @@ section h2 {
 .phto.is-visible {
   opacity: 1;
   transform: rotateZ(-2deg);
-
+}
+#newsdiv{
+  color: white;
+}
+#container{
+  color: white;
+}
 </style>
 
 
-<body style="background-color: #3F00FF;"
+<body style="background-color: #2f3438;"
   <div id="container">
         <center>
           <b> Welcome to Golden Spiral</b>
@@ -137,13 +143,14 @@ section h2 {
   <div id = "phto2 show-on-scroll"> 
     <img src = "tp.jpeg" height = 320px position left = 200px"> 
   </div>
-  <p> News </p>
-  <li> We are opening a new food stall near the land of Water. A new delicious menu is coming your way. Sea food and eat it!</li>
-  <li> Glaggleland is closing for maintainence on the 21st...</li>
-  <li> Come enjoy our wonderful new attractions at the land of electricity or if you are feeling brave visit the land of fire today! </li>
-  <li> Don't get lost! Buy the new map today or print online.</li>
-  <li> Jobs positions are now open. Visit the jobs list page for more details.</li>
-
+  <div id = 'newsdiv' > 
+    <p> News </p>
+    <li> We are opening a new food stall near the land of Water. A new delicious menu is coming your way. Sea food and eat it!</li>
+    <li> Glaggleland is closing for maintainence on the 21st...</li>
+    <li> Come enjoy our wonderful new attractions at the land of electricity or if you are feeling brave visit the land of fire today! </li>
+    <li> Don't get lost! Buy the new map today or print online.</li>
+    <li> Jobs positions are now open. Visit the jobs list page for more details.</li>
+  </div>
 
   <div id="tsparticles"></div>
   <script> pic_animations.js </script>
