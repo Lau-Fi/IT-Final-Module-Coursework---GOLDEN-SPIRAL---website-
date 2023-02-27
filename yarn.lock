@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-tsparticles-engine@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.npmjs.org/tsparticles-engine/-/tsparticles-engine-2.9.0.tgz"
-  integrity sha512-KpoglV8LF/yoN2FRdT6AgkFRlylR+Trj7JHZkb8Vfsf669DwLhVt6jCZ62edPrA7eW+gJmCyU93c6m5Y7k0AHA==
+bootstrap@^5.3.0-alpha1:
+  version "5.3.0-alpha1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.0-alpha1.tgz#380629c4367893f02f7879a01ea3ae0f94e2e70e"
+  integrity sha512-ABZpKK4ObS3kKlIqH+ZVDqoy5t/bhFG0oHTAzByUdon7YIom0lpCeTqRniDzJmbtcWkNe800VVPBiJgxSYTYew==
 
-yarn@^1.22.19:
-  version "1.22.19"
-  resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.19.tgz"
-  integrity sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ==
+tsparticles-engine@^2.8.0:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/tsparticles-engine/-/tsparticles-engine-2.9.3.tgz#c521edd951df2520bd0a8aa76dbbe1b0b183094a"
+  integrity sha512-iAD8LyRH//kx10fDMm6AfQV6dRHs1ZacUUHqVwfutcqM4x1IV2ygpjk0X87LKCnBxYeIMG78+tlxXpnpwUccOg==
