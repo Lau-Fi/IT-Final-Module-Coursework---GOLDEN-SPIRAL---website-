@@ -2,12 +2,22 @@
 # yarn lockfile v1
 
 
-bootstrap@^5.3.0-alpha1:
-  version "5.3.0-alpha1"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.0-alpha1.tgz#380629c4367893f02f7879a01ea3ae0f94e2e70e"
-  integrity sha512-ABZpKK4ObS3kKlIqH+ZVDqoy5t/bhFG0oHTAzByUdon7YIom0lpCeTqRniDzJmbtcWkNe800VVPBiJgxSYTYew==
+"@popperjs/core@^2.11.6":
+  "integrity" "sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
+  "version" "2.11.6"
 
-tsparticles-engine@^2.8.0:
-  version "2.9.3"
-  resolved "https://registry.yarnpkg.com/tsparticles-engine/-/tsparticles-engine-2.9.3.tgz#c521edd951df2520bd0a8aa76dbbe1b0b183094a"
-  integrity sha512-iAD8LyRH//kx10fDMm6AfQV6dRHs1ZacUUHqVwfutcqM4x1IV2ygpjk0X87LKCnBxYeIMG78+tlxXpnpwUccOg==
+"bootstrap@^5.3.0-alpha1":
+  "integrity" "sha512-ABZpKK4ObS3kKlIqH+ZVDqoy5t/bhFG0oHTAzByUdon7YIom0lpCeTqRniDzJmbtcWkNe800VVPBiJgxSYTYew=="
+  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.3.0-alpha1.tgz"
+  "version" "5.3.0-alpha1"
+
+"three@^0.150.1":
+  "integrity" "sha512-5C1MqKUWaHYo13BX0Q64qcdwImgnnjSOFgBscOzAo8MYCzEtqfQqorEKMcajnA3FHy1yVlIe9AmaMQ0OQracNA=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.150.1.tgz"
+  "version" "0.150.1"
+
+"tsparticles-engine@^2.8.0":
+  "integrity" "sha512-r0cWKxefQkQCzU+RRG/82VQnl/fAkws27EuYIOKcnHiYsWnZYcX8iPiQs/qgDajP0haBSn4Vui8UbTCAwSFniw=="
+  "resolved" "https://registry.npmjs.org/tsparticles-engine/-/tsparticles-engine-2.8.0.tgz"
+  "version" "2.8.0"
