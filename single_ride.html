@@ -130,395 +130,61 @@ section h2 {
   width: 100%;
   z-index: -2;
 }
-#pic1{
-  width: 500px;
+body {
+  background-image: url('web.png');
+}
+#mainpic {
   position: relative;
-  top: 640px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
+  top: 320px;
+  left: 840px;
 }
-
-#pic1::after {
-  position: absolute;
-  width: 500px;
-  z-index: -1;
-  opacity: 0;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease-in-out;
-}
-
-#pic1:hover {
-  transform: scale(1.2, 1.2);
-}
-
-#pic1:hover::after {
-  opacity: 1;
-}
-#pic2{
+#symbol {
   position: relative;
-  top: 750px;
-  left: 640px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
-  width: 500px;
+  left: 850px;
+  top: -184px;
 }
-#pic2::after {
-  position: absolute;
-  width: 500px;
-  z-index: -1;
-  opacity: 0;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease-in-out;
-}
-
-#pic2:hover {
-  transform: scale(1.2, 1.2);
-}
-
-#pic2:hover::after {
-  opacity: 1;
-}
-#pic3{
+#desc{
   position: relative;
-  top: 840px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
-  width: 500px;
+  left: -200px;
+  top: -150px;
 }
-#pic3::after {
-  position: absolute;
-  width: 500px;
-  z-index: -1;
-  opacity: 0;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease-in-out;
-}
-
-#pic3:hover {
-  transform: scale(1.2, 1.2);
-}
-
-#pic3:hover::after {
-  opacity: 1;
-}
-#pic4{
+#buttoon{
   position: relative;
-  top: 1000px;
-  left: 640px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
-  width: 500px;
+  left: 320px;
+  top: -275px;
 }
-#pic4::after {
-  position: absolute;
-  width: 500px;
-  z-index: -1;
-  opacity: 0;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease-in-out;
-}
-
-#pic4:hover {
-  transform: scale(1.2, 1.2);
-}
-
-#pic4:hover::after {
-  opacity: 1;
-}
-#pic5{
-  position: relative;
-  top: 1120px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
-  width: 500px;
-}
-#pic5::after {
-  position: absolute;
-  width: 500px;
-  z-index: -1;
-  opacity: 0;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease-in-out;
-}
-
-#pic5:hover {
-  transform: scale(1.2, 1.2);
-}
-
-#pic5:hover::after {
-  opacity: 1;
-}
-.xop-section{
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 6% 2%;
-}
-.xop-grid {
-  margin: 20px 0 0 0;
-  padding: 0;
-  list-style: none;
-  display: block;
-  text-align: center;
-  width: 100%
-}
-.xop-grid:after {
-  clear: both;
-}
-
-.xop-grid:after, .xop-box:before {
-  content: "";
-  display: table;
-}
-
-.xop-grid li {
-  position: relative;
-  width: 328px;
-  height: 328px;
-  display: inline-block;
-  margin: 20px;
-  top: 1200px;
-}
-
-.xop-box {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  cursor: pointer;
-  border-radius: 10px;
-  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
-  transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.xop-box:hover {
-  transform: scale(1.05);
-}
-
-.xop-img-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
-  url(cr.jpg)
-}
-.xop-img-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
-  url(mer.jpg)
-}
-.xop-img-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
-  url(tr.jpg)
-}
-
-.xop-info {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-}
-
-.xop-info h3 {
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
-  color: #fff;
-  font-size: 42px;
-  margin: 0 30px;
-  padding: 100px 0 0 0;
-  line-height: 1.5;
-}
-
-.xop-info p {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #fff;
-}
-@keyframes lights {
-  0% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-  
-  30% { 
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  40% { 
-    color: hsl(230, 100%, 95%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 90%, 0.5),
-      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  70% {
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  100% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-  
-}
-h2 {
-    margin: auto;
-    font-size: 3.5rem;
-    font-weight: 300;
-    animation: lights 5s 750ms linear infinite;
-  }
-#forride1{
-  position: relative;
-  top: -2300px;
-  left: 640px;
-  
-}
-#forride2{
-  position: relative;
-  top: -2000px;
-  left: 100px;
-}
-#forride3{
-  position: relative;
-  top: -1640px;
-  left: 640px;
-}
-#forride4{
-  position: relative;
-  top: -1250px;
-  left: 100px;
-}
-#forride5{
-  position: relative;
-  top: -840px;
-  left: 640px;
-}
-
-
 
 </style>
 
+<div id = 'mainpic'>
+  <img src = 'steam2.jpg' height = '320px' width = '320px' </img> 
+</div>
 
-<body style="background-color: #30245c;"
-  <div id="container">
-        <center>
-        </center>
+<div id = 'symbol'>
+  <img src = 'landofwater.PNG'</img>
+</div>
 
-  </div>
-  <div id="background"></div>
+<div id = 'buttoon'>
+  <a href = 'Rides.html'>
+    <img src = 'back.jpg' height = '10%' width = '10%' </img>
+  </a>
+</div>
 
-  <div id = 'text1'>
-    <h2>Rides List</h2>
-  </div>
-  <div id = 'text2'>
-    <h2> Amazing rides coming up</h2>
-  </div>
+<div id = 'desc'>
+  <p style="color: white;width: 50%; margin: auto;">Welcome to the Steam Punk Roller Coaster, where you'll embark on a thrilling ride through a world of industrial wonder and adventure! As you climb aboard, you'll notice the intricate gears and cogs that power this magnificent machine, and the smell of steam and oil in the air.</p>
 
-  <div id = "pic1" > 
-    <img src = "VR.jpg" height = "420px" width = "500px" >
-  </div>
+<p style="color: white;width: 50%; margin: auto;">Hold on tight as you ascend to the top of the coaster's first hill, propelled by a hissing steam engine. From there, you'll plummet down steep drops, twist and turn through hairpin turns, and barrel through dark tunnels filled with steam and smoke.</p>
 
-  <div id = 'pic2'>
-    <img src = 'erupt.jpg' height = "420px" width = "500px">
-  </div>
+<p style="color: white;width: 50%; margin: auto;">Along the way, you'll encounter all sorts of steam-powered contraptions, from towering clockwork robots to intricate steam-powered vehicles. Look out for the giant gears that loom overhead, and watch as the intricate machinery powers the coaster's twists and turns.</p>
 
-  <div id = 'pic3'>
-    <img src = 'steam.jpg' height = "420px" width = "500px">
-  </div>
+<p style="color: white;width: 50%; margin: auto;">The ride culminates in a thrilling finale as you race through a towering factory, dodging steam blasts and narrowly avoiding dangerous machinery. With the wind in your hair and the thrill of adventure in your heart, you'll emerge from the ride exhilarated and ready for more.</p>
 
-  <div id = 'pic4'>
-    <img src = 'grass.jpg' height = "420px" width = "500px">
-  </div>
+<p style="color: white;width: 50%; margin: auto;">So buckle up, hold on tight, and get ready for the ride of a lifetime on the Steam Punk Roller Coaster!</p>
 
-  <div id = 'pic5'>
-    <img src = 'space.jpg' height = "420px" width = "500px">
-  </div>
+</div>
 
-  <div class = 'xop-section'>
-    <ul class = 'xop-grid'>
-      <li>
-        <div class = 'xop-box xop-img-1'>
-          <a href = '#'>
-            <h3>Resturants of the land of Wind</h3>
-            <p>Eat now at the many delicious facets of Chinese inspired cuisine.</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class = 'xop-box xop-img-2'>
-          <a href = '#'>
-            <h3>Resturants of the land of Earth</h3>
-            <p>Eat now at the many delicious facets of Middle Eastern inspired cuisine.</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class = 'xop-box xop-img-3'>
-          <a href = '#'>
-            <h3>Resturants of the land of Grass</h3>
-            <p>Eat now at the many delicious facets of American inspired cuisine.</p>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="forride1">
-    <h2> Ace Combat: VR experience</h2>
-    <h3> Land of Electricity </h3>
-    <p> Experience our first VR coaster with high exilirating speeds as you fly in a jet around a virtual world created by our <br> top experts.</p> 
-  </div>
-  <div id="forride2">
-    <h2> Eruption Mania</h2>
-    <h3> Land of Fire </h3>
-    <p> Deep in the heat of the jungle, the volanoe of the land of fire has <br> become active! Will you escape in time before it blows? <br> You will need high speeds...</p> 
-  </div>
-  <div id = 'forride3'>
-    <h2>The Steamboat Coaster</h2>
-    <h3> Land of Water </h3>
-    <p> A runaway steam machine is on the loose! Featuring high G turns and rapid acceleration, <br> this ride is a tried and true classic. </p> 
-  </div>
-  <div id = 'forride4'>
-    <h2>Life Run</h2>
-    <h3> Land of Grass</h3>
-    <p>On the trail in the forest, your life will be put to the test. <br> Will you harness the power nature itself on this natural coaster?</p>
-  </div>
-  <div id = 'forride5'>
-    <h2>Off-World Explorer</h2>
-    <h3>Land of Future/Technology&Magic</h3>
-    <p>Explore outer worlds with this fascinating ride. <br> Visit strange new alien civilisation never seen before! <br> Can you do this?</p>
-  </div>
 
-  <div id="tsparticles"></div>
-</body>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        VANTA.HALO({
-            el: "#background",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            size: 1.30
-    });
-  });
-  </script>
+
+</script>
