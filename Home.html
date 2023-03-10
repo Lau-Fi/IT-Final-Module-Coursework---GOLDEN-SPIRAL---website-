@@ -135,22 +135,13 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-body{
-  background-color: rgb(33,31,35);
-  background-repeat: no-repeat;
-  @include filter-gradient(#53455b, #201e22, horizontal);
-  @include background-image(radial-gradient(circle at top,  rgba(83,69,91,1) 0,rgba(32,30,34,1) 70%));
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  font-size: 100%;
-  min-height: 100%;
-  line-height: 1.5;
-  padding: 2.5em 0;
-}
+
 .container {
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;
+  position: relative;
+  top: 150px;
 }
 .group:after {
   content: "";
@@ -313,62 +304,63 @@ sup, .small {
     <li> Don't get lost! Buy the new map today or print online.</li>
     <li> Jobs positions are now open. Visit the jobs list page for more details.</li>
   </div>
+  
   <div class="container group">
 		<div class="grid-1-5">
 			<h2>Basic</h2>
-			<h3><span class="uppercase">Free</span></h3>
-			<p>10,000 monthly visits</p>
+			<h3><span class="uppercase">£40</span></h3>
+			<p>The cheaper plan for visitors</p>
 			<ul>
-				<li>Limited Email Support</li>
-				<li>Unlimited Data Transfer</li>
-				<li>10GB Local Storage</li>
+				<li>Limited ride options</li>
+				<li>No fast pass</li>
+				<li>Little Discounts at resturants</li>
 			</ul>
-			<a href="" class="button">Sign Up</a>
-		</div>
-		<div class="grid-1-5">
-			<h2>Startup</h2>
-			<h3><sup>$</sup>79<span class="small">/mo</span></h3>
-			<p>25,000 monthly visits</p>
-			<ul>
-				<li>Limited Email Support</li>
-				<li>Unlimited Data Transfer</li>
-				<li>20GB Local Storage</li>
-			</ul>		
-			<a href="" class="button">Sign Up</a>	
-		</div>
-		<div class="grid-1-5">
-			<h2>Growth</h2>
-			<h3><sup>$</sup>179<span class="small">/mo</span></h3>
-			<p>75,000 monthly visits</p>
-			<ul>
-				<li>Email Support</li>
-				<li>Unlimited Data Transfer</li>
-				<li>30GB Local Storage</li>
-			</ul>	
-			<a href="" class="button">Sign Up</a>		
+			<a href="" class="button">Buy Now<//a>
 		</div>
 		<div class="grid-1-5">
 			<h2>Premium</h2>
-			<h3><sup>$</sup>499<span class="small">/mo</span></h3>
-			<p>225,000 monthly visits</p>
+			<h3><sup>£</sup>84<span class="small">/pp</span></h3>
+			<p>A superior experience</p>
 			<ul>
-				<li>Email Support</li>
-				<li>Phone Support</li>
-				<li>Unlimited Data Transfer</li>
-			</ul>	
-			<a href="" class="button">Sign Up</a>		
+				<li>Unlimited rides</li>
+				<li>Fast Pass</li>
+				<li>Resturant discounts</li>
+			</ul>		
+			<a href="" class="button">Buy Now</a>	
 		</div>
 		<div class="grid-1-5">
-			<h2>Enterprise</h2>
-			<h3><span class="uppercase">Let's Talk</span></h3>
-			<p>1M+ monthly visits</p>
+			<h2>Family</h2>
+			<h3><sup>£</sup>150<span class="small">/per family</span></h3>
+			<p>Families of 4-8 can buy this.</p>
 			<ul>
-				<li>Email Support</li>
-				<li>Phone Support</li>
-				<li>Dedicated Environment</li>
-				<li>Customized Plan</li>
+				<li>Fun for the whole family</li>
+				<li>Great price</li>
+				<li>Extra room when parking</li>
+			</ul>	
+			<a href="" class="button">Buy now</a>		
+		</div>
+		<div class="grid-1-5">
+			<h2>With hotel </h2>
+			<h3><sup>£</sup>£280<span class="small">/per day (max 4 per room)</span></h3>
+			<p>Stay with us</p>
+			<ul>
+				<li>Choose to stay overnight with us!</li>
+				<li>Free breakfast</li>
+				<li>Never miss a ride!</li>
+			</ul>	
+			<a href="" class="button">Buy now</a>		
+		</div>
+		<div class="grid-1-5">
+			<h2>Super premium event edition</h2>
+			<h3> <sup>£</sup>£280 + original ticket price. <span class="lowercase"> Get a special event on to celebrate you in this park</span></h3>
+			<p>Luxary option</p>
+			<ul>
+				<li>An amazing experience</li>
+				<li>Plan your dream festival</li>
+				<li>Perfect for birthdays</li>
+				<li>Contact us for more information.</li>
 			</ul>
-			<a href="" class="button">Sign Up</a>
+			<a href="" class="button">Buy now</a>
 		</div>		
 	</div>
   <div id="tsparticles"></div>
