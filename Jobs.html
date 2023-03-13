@@ -32,11 +32,15 @@ body {
 </section>
 	<head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-		<meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <meta charset="utf-8">
 		<title>My first three.js app</title>
 		<style>
             @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-			body { margin: 0; }
+            @import url('https://fonts.googleapis.com/css?family=Pacifico');
+			body { margin: 0;
+                   height: 5000px;
+                   width: 5000px; }
             #picone{
                 position: relative;
                 left: -500px;
@@ -60,7 +64,6 @@ body {
             font-size:36px;
             font-weight:bold;
             padding-top:200px;  
-            position:fixed;
             width:100%;
             bottom:45%;
             display:block;
@@ -146,6 +149,114 @@ body {
             a:active {
             color: blue;
             }
+            #empgrid{
+                position: absolute;
+                left: 200px;
+                top: 680px;
+                display: inline-block;
+                margin: 0 40px 0 0;
+            }
+            html { overflow-y: scroll; 
+            }
+            #emptitle{
+                position: absolute;
+                top: 600px;
+                left: 480px;
+                color: white;
+            }
+            @keyframes lights {
+                0% {
+                    color: hsl(230, 40%, 80%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.2),
+                    0 0 0.125em hsla(320, 100%, 60%, 0.3),
+                    -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+                    1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+                }
+                
+                30% { 
+                    color: hsl(230, 80%, 90%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.5),
+                    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+                    -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+                    0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+                }
+                
+                40% { 
+                    color: hsl(230, 100%, 95%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.5),
+                    0 0 0.125em hsla(320, 100%, 90%, 0.5),
+                    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+                    0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+                }
+                
+                70% {
+                    color: hsl(230, 80%, 90%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.5),
+                    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+                    0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+                    -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+                }
+                
+                100% {
+                    color: hsl(230, 40%, 80%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.2),
+                    0 0 0.125em hsla(320, 100%, 60%, 0.3),
+                    1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+                    -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+                }
+                
+                }
+                h2 {
+                    margin: auto;
+                    font-size: 3.5rem;
+                    font-weight: 300;
+                    animation: lights 5s 750ms linear infinite;
+                }
+                #desc1{
+                    position: absolute;
+                    color: white;
+                    top: 675px;
+                    left: 400px;
+                    font-size: 12;
+                }
+                #desc2{
+                    position: absolute;
+                    color: white;
+                    top: 840px;
+                    left: 400px;
+                    font-size: 12;
+
+                }
+                #desc3{
+                    position: absolute;
+                    color: white;
+                    top: 1000px;
+                    left: 400px;
+                    font-size: 12;
+
+                }
+                #desc4{
+                    position: absolute;
+                    color: white;
+                    top: 1140px;
+                    left: 400px;
+                    font-size: 12;
+
+                }
+                #desc5{
+                    position: absolute;
+                    color: white;
+                    top: 1299px;
+                    left: 400px;
+                    font-size: 12;
+
+                }
+                        
 		</style>
 	</head>
 	<body>
@@ -180,6 +291,51 @@ body {
         </div>
         <div id = 'signup'>
             <a href="form.html">Sign-Up Here</a>
+        </div>
+        <div id = 'emptitle'>
+            <h2>Mangement Team</h2>
+        </div>
+        <div id = 'empgrid'>
+            <div id = 'emp1'>
+                <img src = 'a.jpg' height = '150px' width = '150px'>
+            </div>
+            <div id = 'emp2'>
+                <img src = 'b.jpg' height = '150px' width = '150px'>
+            </div>
+            <div id = 'emp3'>
+                <img src = 'c.jpeg' height = '150px' width = '150px'>
+            </div>
+            <div id = 'emp4'>
+                <img src = 'd.jpg' height = '150px' width = '150px'>
+            </div>
+            <div id = 'emp5'>
+                <img src = 'e.jpg' height = '150px' width = '150px'>
+            </div>
+        </div>
+        <div id = 'desc1'>
+            <h3>Maemi Sato</h3>
+            <h4 style = 'color: red;'>Head of Media, Advertising and Relations</h4>
+            <p>As the head of an important department for what the public sees, Maemi Sato has an important role in <br> making sure the theme park is seen as a great place! In charge of producing stories and coming up with great new ideas <br> for the park, thank Maemi for helping to create a fun place for all! Previously a talented artist, <br> Maemi is always looking for new talent and ideas for both the theme park and outside relations such as advertising.</p>
+        </div>
+        <div id = 'desc2'>
+            <h3>Saffi Rakhimova</h3>
+            <h4 style = 'color: rgb(126, 126, 242);'>Head of Security and Management</h4>
+            <p> The head of security, Saffi Rakhimova is a young talent to the company. She helps look after the day to day management of the park including security from <br> malicious actors and efficient management. <br> This is to make sure that each customer gets the best time possible. <br> Talented at 5 different martial arts, Saffi is dedicated to keeping the peace and is a great leader if you are looking to join this branch of the company. </p>
+        </div>
+        <div id = 'desc3'>
+            <h3>Devin Wright</h3>
+            <h4 style = 'color: purple;'>Head of Legal and Hiring</h4>
+            <p>Regarding both legal issues and hiring, Devin Wright helps out at Golden Spiral. He is responsible for managing potential employees so remember to make a <br> good impression! Graduating from the University of Law with the best grades, Devin will hold the company together with his legal might, no objections!  </p>
+        </div>
+        <div id = 'desc4'>
+            <h3>Cedric Banks</h3>
+            <h4 style = 'color: green;'>Head of Finance and Technology</h4>
+            <p>Cedric Banks is a very clever member and head of finance and technology at the business. Here he deals with the numbers! Managing the finance, and creating <br> new ideas regarding the website or rides, Cedric is here. Ranked in the top 1% of smartest people in the world, Cedric is a valuable member of the business. <br>Heres to more days of wealth and prosperity!</p>
+        </div>
+        <div id = 'desc5'>
+            <h3>Greta Tuivasa</h3>
+            <h4 style = 'color: yellow;'>Head of Engineering </h4>
+            <p>As the head in Engineering, Greta Tuivasa is in charge of making sure your rides are the most memorable experiences and fun times. <br> Safety is also important to her. She has had experience in engineering across the world, and although coming from humble origins, <br> she is now head of an important area of our company! She looks forward to seeing who and what will come in the future.</p>
         </div>
     </body>
 </html>
