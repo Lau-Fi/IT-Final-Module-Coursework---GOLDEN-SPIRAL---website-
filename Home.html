@@ -1,366 +1,433 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<div class="title">
+  <nav class="navbar navbar-expand-lg navbar-light text-black bg-#2470FB;">
+    <div class="container-fluid">
+        <a href ='Home.html'><img src = 'logo.png' height = '125px'></a>
+      <a class="navbar-brand" href="Home.html" cursorshover="true">-Golden Spiral</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="Home.html" cursorshover="true">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Map.html" cursorshover="true">Map and Options</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Rides.html" cursorshover="true">Rides List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Jobs.html" cursorshover="true">Job Applications</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+</section>
+<head> 
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2/tsparticles.engine.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-triangles@2/tsparticles.preset.triangles.bundle.min.js"></script>  
+    <script src = 'Home_script.js'> </script>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<style> 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  background-color: #999999;
+  margin: 0;
+}
+
+section h2 {
+  margin: 0;
+}
+
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: #2f3438;
+  width: 1000px;
+  height: 50px;
+}
+
+.wave {
+  width: 200vw;
+  height: 100vw
+}
+.wave svg {
+  display: inline-block;
+}
+.nav-item{
+  color:white;
+}
+#tsparticles {
+  height: 500px;
+  background: local;
+}
+#inline-photo{
+  position: relative;
+  left: 640px;
+}
+
+#phto2 show-on-scroll {
+  position: relative;
+  height: 10px;
+  top: 200px;
+  border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: .25em;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0, .2);
+  margin: 2em auto;
+  opacity: 0;
+  transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 4s .25s cubic-bezier(0,1,3.1), opacity 3.s .25s ease-out;
+  max-width: 60px;
+  width: 40%;
+  will-change: transform, opacity;
+  left: 900px;
+}
+
+#newsdiv{
+  color: white;
+}
+#container{
+  color: white;
+}
+#text1{
+  position: relative;
+  top: 250px;
+  left: 200px;
+}
+#text2{
+  position: relative;
+  top: 600px;
+  left: 500px;
+}
+#newsdiv{
+  position: relative;
+  left: 350px;
+  top: 40px;
+}
+#newsdiv p {
+  position: absolute;
+  left: 400px;
+  top: -20px;
+}
+@import "compass/css3";
+
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  top: 150px;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-1-5 {
+  border: 2px solid #5d4e65;   
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  
+  @media screen and (min-width: 700px) {
+    & {
+      float: left;
+      width: 50%;
+    }
+    &:nth-child(odd) {
+      clear: left;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    & {      
+      width: 33.3333333%;
+    }
+    &:nth-child(3n+1) {
+      clear: left;
+    }
+    &:nth-child(odd) {
+      clear: none;
+    }    
+  }
+  
+  @media screen and (min-width: 1120px) {
+    & {
+       width: 20%;
+    }
+    &:nth-child(odd), &:nth-child(3n+1) {
+       clear: none;
+    }    
+  }
+  
+}
+.grid-1-5:hover {
+  background-color: rgb(83,69,91);
+  @include filter-gradient(#53455b, #201d22, vertical);
+  @include background-image(linear-gradient(top,  rgba(83,69,91,1) 0%,rgba(32,29,34,1) 100%));  
+  border-top: 2px solid #ec7a37;
+  border-bottom: 2px solid #ff4f69;
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  transform: scale(1.025);
+  z-index: 2;
+
+  &:before, &:after {
+    content: ""; 
+    position: absolute; 
+    background-color: rgb(246,125,53);
+    @include filter-gradient(#f67d35, #ff4f68, vertical);
+    @include background-image(linear-gradient(top,  rgba(246,125,53,1) 0%,rgba(255,79,104,1) 100%));
+    top: -2px; 
+    bottom: -2px; 
+    width: 2px;    
+  }
+
+  &:before { 
+    left: -2px; 
+  }
+  &:after { 
+    right: -2px; 
+  }  
+
+  & .button {
+    background-color: rgb(238,122,54);
+    @include filter-gradient(#ee7a36, #eb495d, horizontal);
+    @include background-image(linear-gradient(left,  rgba(238,122,54,1) 0%,rgba(235,73,93,1) 100%));    
+  }
+}
+h2, h3, p, ul {
+  margin: 0
+}
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.5em;
+}
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em;
+}
+p {
+  font-size: 0.875em;  
+}
+p, ul {
+  margin:0 0 1.5em
+}
+ul {
+  color: #796583;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin: 0 0 0.8333333333333333em;
+  }
+}
+.button {
+  background-color: #9c83aa;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px;
+}
+.uppercase, .button, h2 {
+  text-transform: uppercase;
+}
+sup, .small {
+  font-size: 0.6125em;
+}
+#tickettitle{
+  position: relative;
+  left: 600px;
+  top: 100px;
+}
+</style>
+
+
+<body style="background-color: #2f3438;"
+  <div id="container">
+        <center>
+          <b> Welcome to Golden Spiral</b>
+          <br>
+          <b> The Best theme park around. Featuring over 80 rides and multiple areas.</b>
+        </center>
+
+  </div>
+
+  <div id = 'text1'>
+    <h2> Featuring beautiful locations</h2>
+  </div>
+  <div id = 'text2'>
+    <h2> And amazing rides</h2>
+  </div>
+  <div id = "inline-photo" > 
+    <img src = "yasashi sai.png" height = "420px" width = "500px" >
+  </div>
+  <div id = "phto2 show-on-scroll"> 
+    <img src = "tp.jpeg" height = 320px position left = 200px"> 
+  </div>
+  <div id = 'newsdiv' > 
+    <p> News </p>
+    <li> We are opening a new food stall near the land of Water. A new delicious menu is coming your way. Sea food and eat it!</li>
+    <li> Glaggleland is closing for maintainence on the 21st...</li>
+    <li> Come enjoy our wonderful new attractions at the land of electricity or if you are feeling brave visit the land of fire today! </li>
+    <li> Don't get lost! Buy the new map today or print online.</li>
+    <li> Jobs positions are now open. Visit the jobs list page for more details.</li>
+  </div>
+  <div id = 'tickettitle'>
+    <h2>Buy your tickets to the park now!</h2>
+  </div>
+  <div class="container group">
+		<div class="grid-1-5">
+			<h2>Basic</h2>
+			<h3><sup>£</sup>40<span class="small">/pp</span></h3>
+			<p>The cheaper plan for visitors</p>
+			<ul>
+				<li>Limited ride options</li>
+				<li>No fast pass</li>
+				<li>Little Discounts at resturants</li>
+			</ul>		
+			<a href="" class="button">Buy Now</a>	
+		</div>
+		<div class="grid-1-5">
+			<h2>Family</h2>
+			<h3><sup>£</sup>150<span class="small">/per family</span></h3>
+			<p>Families of 4-8 can buy this.</p>
+			<ul>
+				<li>Fun for the whole family</li>
+				<li>Great price</li>
+				<li>Extra room when parking</li>
+			</ul>	
+			<a href="" class="button">Buy now</a>		
+		</div>
+		<div class="grid-1-5">
+			<h2>With hotel </h2>
+			<h3><sup>£</sup>£280<span class="small">/per day (max 4 per room)</span></h3>
+			<p>Stay with us</p>
+			<ul>
+				<li>Choose to stay overnight with us!</li>
+				<li>Free breakfast</li>
+				<li>Never miss a ride!</li>
+			</ul>	
+			<a href="" class="button">Buy now</a>		
+		</div>
+		<div class="grid-1-5">
+			<h2>Super premium event edition</h2>
+			<h3> <sup>£</sup>£280 + original ticket price. <span class="lowercase"> Get a special event on to celebrate you in this park</span></h3>
+			<p>Luxary option</p>
+			<ul>
+				<li>An amazing experience</li>
+				<li>Plan your dream festival</li>
+				<li>Perfect for birthdays</li>
+				<li>Contact us for more information.</li>
+			</ul>
+			<a href="" class="button">Buy now</a>
+		</div>		
+	</div>
+  <div id="tsparticles"></div>
+  <script> pic_animations.js </script>
+</body>
+
+<script>
+  window.onscroll = FadeIn;
+
+  function fadeIn() {
+            var fade = document.getElementById("text1");
+            var opacity = 0;
+            var intervalID = setInterval(function() {
+          
+                if (opacity < 1) {
+                    opacity = opacity + 0.1
+                    fade.style.opacity = opacity;
+                } else {
+                    clearInterval(intervalID);
+                }
+            }, 200);
+        }
+    </script>
+
+</script>
 
-<div class="title"> 
 
-  <nav class="navbar navbar-expand-lg navbar-light text-black bg-#2470FB;"> 
 
-    <div class="container-fluid"> 
 
-        <a href ='Home.html'><img src = 'logo.png' height = '125px'></a> 
 
-      <a class="navbar-brand" href="Home.html" cursorshover="true">-Golden Spiral</a> 
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation"> 
 
-        <span class="navbar-toggler-icon"></span> 
 
-      </button> 
 
-      <div class="collapse navbar-collapse"> 
 
-        <ul class="navbar-nav me-auto"> 
 
-          <li class="nav-item"> 
 
-            <a class="nav-link active" href="Home.html" cursorshover="true">Home 
 
-              <span class="visually-hidden">(current)</span> 
 
-            </a> 
 
-          </li> 
 
-          <li class="nav-item"> 
 
-            <a class="nav-link" href="Map.html" cursorshover="true">Map and Options</a> 
 
-          </li> 
 
-          <li class="nav-item"> 
 
-            <a class="nav-link" href="Rides.html" cursorshover="true">Rides List</a> 
 
-          </li> 
 
-          <li class="nav-item"> 
 
-            <a class="nav-link" href="Jobs.html" cursorshover="true">Job Applications</a> 
 
-          </li> 
 
-        </ul> 
 
-      </div> 
 
-    </div> 
 
-  </nav> 
 
-</div> 
 
-</section> 
 
-<head>  
 
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2/tsparticles.engine.min.js"></script>    
 
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-triangles@2/tsparticles.preset.triangles.bundle.min.js"></script>   
 
-    <script src = 'Home_script.js'> </script>   
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
 
-</head> 
 
- 
- 
 
-<style>  
 
-body { 
 
-  margin: 0; 
 
-  padding: 0; 
 
-  overflow-x: hidden; 
 
-} 
-
- 
- 
-
-section { 
-
-  min-height: 100vh; 
-
-  background-color: #999999; 
-
-  margin: 0; 
-
-} 
-
- 
- 
-
-section h2 { 
-
-  margin: 0; 
-
-} 
-
- 
- 
- 
-
-.title { 
-
-  position: absolute; 
-
-  left: 50%; 
-
-  top: 5%; 
-
-  transform: translate(-50%, -50%); 
-
-  background-color: transparent; 
-
-  color: #2f3438; 
-
-  width: 1000px; 
-
-  height: 50px; 
-
-} 
-
- 
- 
-
-.wave { 
-
-  width: 200vw; 
-
-  height: 100vw 
-
-} 
-
-.wave svg { 
-
-  display: inline-block; 
-
-} 
-
-.nav-item{ 
-
-  color:white; 
-
-} 
-
-#tsparticles { 
-
-  height: 500px; 
-
-  background: local; 
-
-} 
-
-#inline-photo{ 
-
-  position: relative; 
-
-  left: 640px; 
-
-} 
-
- 
- 
-
-#phto2 show-on-scroll { 
-
-  position: relative; 
-
-  height: 10px; 
-
-  top: 200px; 
-
-  border: 1em solid #fff; 
-
-  border-bottom: 4em solid #fff; 
-
-  border-radius: .25em; 
-
-  box-shadow: 1em 1em 2em .25em rgba(0,0,0, .2); 
-
-  margin: 2em auto; 
-
-  opacity: 0; 
-
-  transform: translateY(4em) rotateZ(-5deg); 
-
-  transition: transform 4s .25s cubic-bezier(0,1,3.1), opacity 3.s .25s ease-out; 
-
-  max-width: 60px; 
-
-  width: 40%; 
-
-  will-change: transform, opacity; 
-
-  left: 900px; 
-
-} 
-
- 
- 
-
-#newsdiv{ 
-
-  color: white; 
-
-} 
-
-#container{ 
-
-  color: white; 
-
-} 
-
-#text1{ 
-
-  position: relative; 
-
-  top: 250px; 
-
-  left: 200px; 
-
-} 
-
-#text2{ 
-
-  position: relative; 
-
-  top: 600px; 
-
-  left: 500px; 
-
-} 
-
-</style> 
-
- 
- 
- 
-
-<body style="background-color: #2f3438;" 
-
-  <div id="container"> 
-
-        <center> 
-
-          <b> Welcome to Golden Spiral</b> 
-
-          <br> 
-
-          <b> The Best theme park around. Featuring over 80 rides and multiple areas.</b> 
-
-        </center> 
-
- 
- 
-
-  </div> 
-
- 
- 
-
-  <div id = 'text1'> 
-
-    <h2> Featuring beautiful locations</h2> 
-
-  </div> 
-
-  <div id = 'text2'> 
-
-    <h2> And amazing rides</h2> 
-
-  </div> 
-
-  <div id = "inline-photo" >  
-
-    <img src = "yasashi sai.png" height = "420px" width = "500px" > 
-
-  </div> 
-
-  <div id = "phto2 show-on-scroll">  
-
-    <img src = "tp.jpeg" height = 320px position left = 200px">  
-
-  </div> 
-
-  <div id = 'newsdiv' >  
-
-    <p> News </p> 
-
-    <li> We are opening a new food stall near the land of Water. A new delicious menu is coming your way. Sea food and eat it!</li> 
-
-    <li> Glaggleland is closing for maintainence on the 21st...</li> 
-
-    <li> Come enjoy our wonderful new attractions at the land of electricity or if you are feeling brave visit the land of fire today! </li> 
-
-    <li> Don't get lost! Buy the new map today or print online.</li> 
-
-    <li> Jobs positions are now open. Visit the jobs list page for more details.</li> 
-
-  </div> 
-
- 
- 
-
-  <div id="tsparticles"></div> 
-
-  <script> pic_animations.js </script> 
-
-</body> 
-
- 
- 
-
-<script> 
-
-  window.onscroll = FadeIn; 
-
- 
- 
-
-  function fadeIn() { 
-
-            var fade = document.getElementById("text1"); 
-
-            var opacity = 0; 
-
-            var intervalID = setInterval(function() { 
-
-           
-
-                if (opacity < 1) { 
-
-                    opacity = opacity + 0.1 
-
-                    fade.style.opacity = opacity; 
-
-                } else { 
-
-                    clearInterval(intervalID); 
-
-                } 
-
-            }, 200); 
-
-        } 
-
-    </script> 
-
- 
- 
-
-</script> 
 
